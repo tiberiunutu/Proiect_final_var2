@@ -1,0 +1,267 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient( to right ,red 10%,violet 90%);
+    background-color: violet;
+    width: 100vw;
+    height:100vh;
+    
+
+}
+
+
+.div-frame {
+    width: 80%;
+    height: 500px;
+    background-color: azure;
+    background-image: radial-gradient(rgb(158, 23, 23) 12%,pink 45%,blue);
+    margin-top: auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 2px yellow;
+    margin-top: 2.5%;
+    margin-bottom: 2%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.div-frame > div {
+    background-color: rgb(160, 45, 45);
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+.div-section1 {
+    height: 15%;
+    background-image: url("./imagini/header3.jpeg");
+}
+
+.div-section1 > h1 {
+    color: yellow;
+    text-align: center;
+    letter-spacing: 6px;
+    text-shadow: 4px 4px 4px rgb(6, 83, 6) ;
+}
+
+
+
+.div-section2 {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.div-principal-imagini {
+    width: 100%;
+    height: 218px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.div-carusel {
+    border: 1px solid yellow;
+    width: 35%;
+    height: 100%;
+}
+.div-carusel img {
+    width: 100px;
+    height: 216px;
+    object-fit: cover;
+}
+
+.div-options {
+    /*border: 1px solid yellow;*/
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+
+}
+
+.div-options div {
+    /*border: 1px solid yellowgreen;*/
+    height: 62px;
+    width: 120px;
+}
+
+.div-options img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.8s;
+}
+
+.div-options img:hover {
+    box-shadow: 0px 0px 4px 4px rgb(223, 223, 148);
+}
+
+.div-options img:active {
+    box-shadow: 0px 0px 4px 4px black;
+}
+
+.img-sayian {
+    border: 1px solid yellow;
+    width:35% ;
+    height: 100%;
+
+}
+
+.sayian {
+    height: 100%;
+    width: 100%;
+}
+
+.div-counters {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    color: yellowgreen;
+    font-weight: bold;
+    height: 6px;
+    justify-content: space-around;
+    align-items: baseline;
+    
+}
+
+.div-counters span {
+    font-family: cursive;
+    color:burlywood;
+}
+
+.div-counters button {
+    width: 46px;
+    height:46px;
+    padding: 2px;
+    border-radius: 50%;
+    background-color: red;
+    color: pink;
+    border: solid 2px pink;
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+.div-counters button:hover {
+    color:rgb(213, 25, 40);
+    background-color: aliceblue;
+    transition: all 0.8s;
+}
+.div-counters button:active {
+    color: red;
+    background-color: lightsalmon;
+    transition: all 0.8s;
+}
+
+
+.div-section3 {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: yellowgreen;
+    
+}
+
+.div-section3  a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.div-section3 span {
+    text-decoration: underline;
+    font-weight: bold;
+    color: cadetblue;                           
+}
+
+
+
+/* Stilizare modal 1 */
+
+.modal1 {
+    width: 280px;
+    height: 100px;
+    background-color: bisque;
+    padding: 10px 20px;
+    border-radius: 6px;
+    position: fixed;
+    top: 2px;
+    z-index: 10;
+    visibility:hidden;
+}
+
+.modal1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 12px;
+    color:rgb(113, 67, 11);
+    justify-self: auto;
+}
+
+.exitButton {
+    width: 240px;
+    justify-self: center;
+    color:rgb(203, 44, 33);
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    cursor:pointer;
+    border-radius: 12px;
+    background-color: rgb(223, 204, 181);
+}
+
+/* Stilizare modal 2 */
+
+.modal2 {
+    width: 200px;
+    height: 46px;
+    background-color: rgb(227, 153, 153);
+    padding: 10px 20px;
+    border: 1px white solid;
+    border-radius: 6px;
+    position: fixed;
+    top: 112px;
+    z-index: 9;
+    display: flex;
+    justify-content:space-around;
+    visibility:hidden;
+}
+
+.modal2 p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.exitButton2 {
+    background-color: rgb(242, 142, 142);
+    color: aliceblue;
+    padding-left: 6px;
+    padding-right: 6px;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
